@@ -30,8 +30,8 @@ void telemetryPortOut();
 void print_float_array(float *arr, int size);
 
 //Min - max
-float acc_off[] = {-0.024255, 0.192162, -0.205655};
-float acc_scale[]  = {0.813405, 0.812885, 0.807327};
+float acc_off[] = {-0.030003, -0.030003, 0.161977};
+float acc_scale[]  = {0.997396, 0.998339, 0.990689};
 float magn_off[]  = {-8.812010, 23.329735, -1.055010};
 float magn_scale[]  = {1.009141, 0.976412, -1.055010};
 
@@ -63,8 +63,8 @@ FusionAhrsFlags flags;
   const FusionVector accelerometerSensitivity = {1.0f, 1.0f, 1.0f};
   const FusionVector accelerometerOffset = {0.0f, 0.0f, 0.0f};
 
-  const FusionMatrix softIronMatrix = {1.0300,0.0006,-0.0011,0.0006,0.9830,-0.0009,-0.0011,-0.0009,0.9877};
-  const FusionVector hardIronOffset = {-8.151,23.420,-9.036};
+  const FusionMatrix softIronMatrix = {1.0181,-0.0046,-0.0144,-0.0046,0.9709,-0.0100,-0.0144,-0.0100,1.012};
+  const FusionVector hardIronOffset = {-14.210,11.815,-12.873};
 
 //new data available
 volatile int newIMUData;
